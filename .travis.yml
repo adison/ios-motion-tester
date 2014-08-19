@@ -1,1 +1,5 @@
 language: objective-c
+xcode_wordspace: motion-detect.xcworkspace
+#xcode_project: MyNewProject.xcodeproj # path to your xcodeproj folder
+xcode-scheme: motiondetectTests
+#xcode_scheme: MyNewProjectTests
