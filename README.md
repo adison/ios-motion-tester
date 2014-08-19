@@ -1,8 +1,10 @@
 #Travis CI 測試用專案
 
 測試結果
-[![Build Status](https://travis-ci.org/adisonwu/ios-motion-tester)](https://travis-ci.
+[![Build Status](https://travis-ci.org/adisonwu/ios-motion-tester.png)](https://travis-ci.
 org/adisonwu/ios-motion-tester)
+
+
 
 
 #说明
