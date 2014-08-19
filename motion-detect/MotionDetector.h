@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "SynthesizeSingleton.h"
+#import <CoreMotion/CoreMotion.h>
 @interface MotionDetector : NSObject
+
+-(void)getAccelemetor:(void(^)(CMAccelerometerData *aData))aBlock;
+-(void)getGyro:(void(^)(CMGyroData* aData))aBlock;
+-(void)getDeviceMotion:(void(^)(CMDeviceMotion* aData))aBlock;
+-(void)getMagnet:(void(^)(CMMagnetometerData* aData))aBlock;
+
+-(void)stop;
+-(void)start;
++(instancetype)sharedManager;
 
 @end

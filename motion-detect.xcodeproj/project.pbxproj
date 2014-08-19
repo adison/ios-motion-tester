@@ -23,6 +23,8 @@
 		CC975E3719A2ED4F005EAB26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC975E3519A2ED4F005EAB26 /* InfoPlist.strings */; };
 		CC975E3919A2ED4F005EAB26 /* motion_detectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC975E3819A2ED4F005EAB26 /* motion_detectTests.m */; };
 		CC975E4419A2F96E005EAB26 /* MotionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = CC975E4319A2F96E005EAB26 /* MotionDetector.m */; };
+		CC975E4919A301F9005EAB26 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC975E4819A301F9005EAB26 /* CoreMotion.framework */; };
+		CC975E4E19A307F2005EAB26 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC975E4D19A307F2005EAB26 /* MapKit.framework */; };
 		D12246145174453782B514F3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A6F694466A49E7BBDE0B5E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,9 @@
 		CC975E4219A2F96E005EAB26 /* MotionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionDetector.h; sourceTree = "<group>"; };
 		CC975E4319A2F96E005EAB26 /* MotionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionDetector.m; sourceTree = "<group>"; };
 		CC975E4519A2F989005EAB26 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		CC975E4819A301F9005EAB26 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		CC975E4A19A3061B005EAB26 /* commonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commonMacro.h; sourceTree = "<group>"; };
+		CC975E4D19A307F2005EAB26 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +75,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC975E4919A301F9005EAB26 /* CoreMotion.framework in Frameworks */,
 				CC975E1019A2ED4F005EAB26 /* CoreGraphics.framework in Frameworks */,
 				CC975E1219A2ED4F005EAB26 /* UIKit.framework in Frameworks */,
 				CC975E0E19A2ED4F005EAB26 /* Foundation.framework in Frameworks */,
+				CC975E4E19A307F2005EAB26 /* MapKit.framework in Frameworks */,
 				D12246145174453782B514F3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +122,8 @@
 		CC975E0C19A2ED4F005EAB26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC975E4D19A307F2005EAB26 /* MapKit.framework */,
+				CC975E4819A301F9005EAB26 /* CoreMotion.framework */,
 				CC975E0D19A2ED4F005EAB26 /* Foundation.framework */,
 				CC975E0F19A2ED4F005EAB26 /* CoreGraphics.framework */,
 				CC975E1119A2ED4F005EAB26 /* UIKit.framework */,
@@ -138,6 +147,7 @@
 				CC975E1419A2ED4F005EAB26 /* Supporting Files */,
 				CC975E4219A2F96E005EAB26 /* MotionDetector.h */,
 				CC975E4319A2F96E005EAB26 /* MotionDetector.m */,
+				CC975E4A19A3061B005EAB26 /* commonMacro.h */,
 			);
 			path = "motion-detect";
 			sourceTree = "<group>";
@@ -222,6 +232,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = senao.mis;
 				TargetAttributes = {
+					CC975E0919A2ED4F005EAB26 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					CC975E2A19A2ED4F005EAB26 = {
 						TestTargetID = CC975E0919A2ED4F005EAB26;
 					};
