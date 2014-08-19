@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic) IBOutlet UILabel *lblAcc;
+@property (nonatomic) IBOutlet UILabel *lblGeny;
 @end
