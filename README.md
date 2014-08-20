@@ -26,7 +26,7 @@ Kiwi: 测试框架
 
 ##与 Travis CI 整合
 ###需求
-	.travis.yml 文件
+	.travis.yml 文件，不能有中文，不然 travis 无法解析
 	github 帐号
 	travis 帐号, 如果目标 repo 是私人 repo, 需要 travis pro 帐号
 	

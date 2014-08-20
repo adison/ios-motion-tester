@@ -7,9 +7,8 @@ language: objective-c
 #script: xctool -project motion-detect.xcworkspace \
 # -scheme motiondetectTests test
 
-# 测试目标/空间
-xcode_wordspace: motion-detect.xcworkspace
-#xcode_project: MyNewProject.xcodeproj # path to your xcodeproj folder
-# 测试目标
+# the target workspace
+xcode_wordspace: motion-detect.xcworkspace # path to your xcodeproj folder
+# the target test scheme
 xcode-scheme: motiondetectTests
 #xcode_scheme: MyNewProjectTests
