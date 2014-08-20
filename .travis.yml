@@ -1,5 +1,10 @@
 language: objective-c
 
+# the target workspace
+xcode_workspace: motion-detect.xcworkspace # path to your xcodeproj folder
+# the target test scheme
+xcode_scheme: motiondetectTests
+
 #before_install:
 #     - brew update
 #     - brew install xctool
@@ -11,8 +16,7 @@ language: objective-c
 before_install:
 # it seems for a long command, we can split it arbitrary?
 # but escape \ at command end and a dash at starting for new command is necessary
-  - echo 'ready 
-  go gogogo a long long sentence'
+  - echo 'ready   go gogogo a long long sentence'
   - echo 'ready 2'
 # script for install
 install:
@@ -29,7 +33,3 @@ after_failure:
 after_script:
   echo 'after'
 
-# the target workspace
-xcode_workspace: motion-detect.xcworkspace # path to your xcodeproj folder
-# the target test scheme
-xcode_scheme: motiondetectTests
