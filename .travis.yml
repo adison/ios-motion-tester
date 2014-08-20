@@ -1,4 +1,10 @@
 language: objective-c
+before_install:
+     - brew update
+     - brew install xctool
+script: xctool -project motion-detect.xcworkspace \
+ -scheme motiondetectTests test
+
 xcode_wordspace: motion-detect.xcworkspace
 #xcode_project: MyNewProject.xcodeproj # path to your xcodeproj folder
 xcode-scheme: motiondetectTests
