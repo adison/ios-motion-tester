@@ -37,8 +37,16 @@ Kiwi: 测试框架
 ####travis.yml 
 区块中只有单一指令时，直接输入即可
 如果有多重指令，指令开头要加上 "- "（注意空格）
-如果下一行是此指令的一部分，则最后使用 \ 结尾
-
+如果下一行是此指令的一部分，则最后使用 \ 结尾，示意如下
+```
+before_install:
+  - echo script1
+  - echo long-script2 \
+  - part of long-script2
+  - echo script 3
+after_install:
+  echo single script
+```
 
 
 	

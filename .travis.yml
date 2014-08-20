@@ -19,8 +19,10 @@ xcode_scheme: Pods-motiondetectTests
 
 # script before install
 before_install:
-  - echo 'ready   go gogogo a long long sentence'
-  - echo 'ready 2'
+  - echo 'script1'
+  - echo 'go gogogo a long long sentence \
+  end of script 2'
+  - echo 'script 3'
 # script for install
 install:
   echo 'installing'
