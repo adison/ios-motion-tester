@@ -10,5 +10,5 @@ language: objective-c
 # the target workspace
 xcode_wordspace: motion-detect.xcworkspace # path to your xcodeproj folder
 # the target test scheme
-xcode-scheme: motiondetectTests
+xcode_scheme: motiondetectTests
 #xcode_scheme: MyNewProjectTests
