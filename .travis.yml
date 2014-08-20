@@ -9,8 +9,9 @@ language: objective-c
 
 # script before install
 before_install:
-  -echo 'ready \
-  -go gogogo a long long sentence'
+# it seems for a long command, we can split it arbitrary?
+  -echo 'ready 
+  go gogogo a long long sentence'
   -echo 'ready 2'
 # script for install
 install:
