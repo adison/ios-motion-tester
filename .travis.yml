@@ -9,7 +9,9 @@ language: objective-c
 
 # script before install
 before_install:
-  echo 'ready go'
+  -echo 'ready \
+  -go gogogo a long long sentence'
+  -echo 'ready 2'
 # script for install
 install:
   echo 'installing'
