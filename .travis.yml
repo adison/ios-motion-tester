@@ -4,9 +4,8 @@ language: objective-c
 xcode_workspace: motion-detect.xcworkspace # path to your xcodeproj folder
 # the target test scheme
 #xcode_scheme: motiondetectTests
-xcode_scheme: 
-#	-Pods-motiondetectTests
-	motion-detect
+xcode_scheme: Pods-motiondetectTests motion-detect
+
 #before_install:
 #     - brew update
 #     - brew install xctool
@@ -38,4 +37,3 @@ after_failure:
 # script after done
 after_script:
   echo 'after'
-
