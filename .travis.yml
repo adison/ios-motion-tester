@@ -6,7 +6,7 @@ xcode_workspace: motion-detect.xcworkspace # path to your xcodeproj folder
 #xcode_scheme: motiondetectTests
 xcode_scheme: 
 #	-Pods-motiondetectTests
-	-motion-detect
+	motion-detect
 #before_install:
 #     - brew update
 #     - brew install xctool
