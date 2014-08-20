@@ -11,9 +11,9 @@ language: objective-c
 before_install:
 # it seems for a long command, we can split it arbitrary?
 # but escape \ at command end and a dash at starting for new command is necessary
-  -echo 'ready 
-  go gogogo a long long sentence' \
-  -echo 'ready 2'
+  - echo 'ready 
+  go gogogo a long long sentence'
+  - echo 'ready 2'
 # script for install
 install:
   echo 'installing'
