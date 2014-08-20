@@ -26,9 +26,14 @@ Kiwi: 测试框架
 
 ##与 Travis CI 整合
 ###需求
-	.travis.yml 文件，不能有中文，不然 travis 无法解析
+	.travis.yml 文件，不能有中文，不然 travis 无法解析 ([参考文件](http://docs.travis-ci.com/user/languages/objective-c/))
 	github 帐号
 	travis 帐号, 如果目标 repo 是私人 repo, 需要 travis pro 帐号
+此外，使用 travis 时，必须对应用建立共享 scheme, 并且显式加入相关的依赖套件至 scheme
+[In order to your run your tests within a continuous integration environment, you must create Shared Schemes for your application target and ensure that all dependencies (such as CocoaPods) are added explicitly to the Scheme.](http://stackoverflow.com/questions/19607894/how-to-get-travis-ci-to-build-and-test-xcode-projects-hosted-on-github)  
+上面这段我一开始也不是很了..
+不过总之就是开启 scheme 管理页面，把 target/test 最右边的  shared 打勾
+
 	
 ###整合 kiwi
 在 Podfile 中整合 kiwi, target 应该是 scheme 中的测试目标名称，有用 - 破折号时请注意，pod 可能解析时会有问题（待确认）
