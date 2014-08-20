@@ -3,7 +3,8 @@ language: objective-c
 # the target workspace
 xcode_workspace: motion-detect.xcworkspace # path to your xcodeproj folder
 # the target test scheme
-xcode_scheme: motiondetectTests
+#xcode_scheme: motiondetectTests
+xcode_scheme: Pods-motiondetectTests
 
 #before_install:
 #     - brew update
