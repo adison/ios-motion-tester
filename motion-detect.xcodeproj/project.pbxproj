@@ -25,6 +25,7 @@
 		CC975E4419A2F96E005EAB26 /* MotionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = CC975E4319A2F96E005EAB26 /* MotionDetector.m */; };
 		CC975E4919A301F9005EAB26 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC975E4819A301F9005EAB26 /* CoreMotion.framework */; };
 		CC975E4E19A307F2005EAB26 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC975E4D19A307F2005EAB26 /* MapKit.framework */; };
+		CC975E6619A42FC9005EAB26 /* KiwiMotionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = CC975E6519A42FC9005EAB26 /* KiwiMotionDetector.m */; };
 		D12246145174453782B514F3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A6F694466A49E7BBDE0B5E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		CC975E4819A301F9005EAB26 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		CC975E4A19A3061B005EAB26 /* commonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commonMacro.h; sourceTree = "<group>"; };
 		CC975E4D19A307F2005EAB26 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CC975E6519A42FC9005EAB26 /* KiwiMotionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KiwiMotionDetector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				CC975E3819A2ED4F005EAB26 /* motion_detectTests.m */,
+				CC975E6519A42FC9005EAB26 /* KiwiMotionDetector.m */,
 				CC975E3319A2ED4F005EAB26 /* Supporting Files */,
 			);
 			path = "motion-detectTests";
@@ -230,7 +233,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = senao.mis;
+				ORGANIZATIONNAME = adison.wu;
 				TargetAttributes = {
 					CC975E0919A2ED4F005EAB26 = {
 						SystemCapabilities = {
@@ -364,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC975E3919A2ED4F005EAB26 /* motion_detectTests.m in Sources */,
+				CC975E6619A42FC9005EAB26 /* KiwiMotionDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
