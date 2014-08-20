@@ -16,6 +16,17 @@
 
 @implementation MotionDetector
 
+/**
+ *  背景光量
+ */
+-(void)testLightSensor {
+    // app store 不接受的東西
+    // http://iphonedevwiki.net/index.php/AppleISL29003
+}
+
+/**
+ *  CPU 用量
+ */
 -(void)getCpuUsage {
     NSLog(@"CPU Usage %+2.f", cpu_usage());
     
@@ -83,6 +94,10 @@ float cpu_usage() {
     return tot_cpu;
 }
 
+
+/**
+ *  統計網路流量
+ */
 -(void)getNetworkFlow {
     BOOL   success;
     struct ifaddrs *addrs;
@@ -158,6 +173,9 @@ float cpu_usage() {
     NSLog(@"Screen Brightness: %f",[[UIScreen mainScreen] brightness]);
 }
 
+/**
+ *  測試進接感應器，需要有更好的測試方法
+ */
 -(void)testProximitySensor {
     UIDevice *dd = [UIDevice currentDevice];
     dd.proximityMonitoringEnabled = YES;
@@ -168,11 +186,10 @@ float cpu_usage() {
     dd.proximityMonitoringEnabled = NO;
 }
 
--(void)testLightSensor {
-    
-}
 
-
+/**
+ *  加速計
+ */
 -(void)getAccelemetor:(void(^)(CMAccelerometerData *aData))aBlock {
     if (manager == nil || !manager.isAccelerometerActive) {
         aBlock(nil);
@@ -182,6 +199,9 @@ float cpu_usage() {
     }
 }
 
+/**
+ *  陀螺儀
+ */
 -(void)getGyro:(void(^)(CMGyroData* aData))aBlock {
     if (manager == nil || !manager.isGyroActive) {
         aBlock(nil);
@@ -191,6 +211,9 @@ float cpu_usage() {
     }
 }
 
+/**
+ *  裝置動態
+ */
 -(void)getDeviceMotion:(void(^)(CMDeviceMotion* aData))aBlock {
     if (manager == nil || !manager.isDeviceMotionActive) {
         aBlock(nil);
@@ -200,6 +223,9 @@ float cpu_usage() {
     }
 }
 
+/**
+ *  磁力計
+ */
 -(void)getMagnet:(void(^)(CMMagnetometerData* aData))aBlock{
     if (manager == nil || !manager.isMagnetometerActive) {
         aBlock(nil);
@@ -209,8 +235,11 @@ float cpu_usage() {
     }
 }
 
-NSTimeInterval INTERVAL_UPDATE = 0.1f;
 
+NSTimeInterval INTERVAL_UPDATE = 0.1f;
+/**
+ *  啟動 CMMotionManager
+ */
 -(void)start {
     if (manager == nil) {
         manager = [[CMMotionManager alloc] init];
@@ -233,6 +262,9 @@ NSTimeInterval INTERVAL_UPDATE = 0.1f;
     }
 }
 
+/**
+ *  停止 CMMotionManager
+ */
 -(void)stop {
     if (manager == nil) {
         return;
