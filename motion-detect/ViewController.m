@@ -18,6 +18,11 @@
 @implementation ViewController
 @synthesize lblAcc, lblGeny, lblMag, lblMotion;
 
+-(IBAction)toggleFlash:(id)sender {
+    [detector testFlash];
+    [detector testProximitySensor];
+}
+
 -(void)refreshData {
     [detector getMagnet:^(CMMagnetometerData *aData) {
         lblMag.text = NSPRINTF(@"磁力？\nx :%+.2f\ny :%+.2f\nz :%+.2f",
@@ -38,6 +43,9 @@
                                 aData.rotationRate.y,
                                 aData.rotationRate.z);
     }];
+    
+    [detector getNetworkFlow];
+    [detector getCpuUsage];
 }
 
 - (void)viewDidLoad {

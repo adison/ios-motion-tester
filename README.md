@@ -38,8 +38,8 @@ Kiwi: 测试框架
 区块中只有单一指令时，直接输入即可
 如果有多重指令，指令开头要加上 "- "（注意空格）
 如果指令真的太多，可以考慮指定 shell script 檔案  
-```before_script: travis/before_script.sh``` 
-
+```before_script: travis/before_script.sh```   
+[travis.yml 測試區](http://lint.travis-ci.org/)
 
 	
 ###整合 kiwi
@@ -72,3 +72,4 @@ The following build commands failed:
 [jenkins plugin 列表](https://wiki.jenkins-ci.org/display/JENKINS/Plugins)
 [为 iOS 建立 Travis CI](http://objccn.io/issue-6-5/)
 [使用jenkins CI](http://www.uml.org.cn/jchgj/201311111.asp)
+[XCTool 說明文件](https://github.com/facebook/xctool#continuous-integration)

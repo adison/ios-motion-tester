@@ -26,4 +26,5 @@
 // 動態
 @property (nonatomic) IBOutlet UILabel *lblMotion;
 
+-(IBAction)toggleFlash:(id)sender;
 @end
