@@ -1,11 +1,15 @@
 language: objective-c
+# 开始前需安装套件，不过 travis 不是已经有 xctool?
 before_install:
      - brew update
      - brew install xctool
+# 测试脚本
 script: xctool -project motion-detect.xcworkspace \
  -scheme motiondetectTests test
 
+# 测试目标/空间
 xcode_wordspace: motion-detect.xcworkspace
 #xcode_project: MyNewProject.xcodeproj # path to your xcodeproj folder
+# 测试目标
 xcode-scheme: motiondetectTests
 #xcode_scheme: MyNewProjectTests
