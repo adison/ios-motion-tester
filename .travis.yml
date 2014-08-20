@@ -20,8 +20,8 @@ xcode_scheme: Pods-motiondetectTests
 # script before install
 before_install:
   - echo 'script1'
-  - echo 'each line segment of long command must be matched quetes or other ules ' \
-  - ' 2nd part of long command'
+  - echo each line segment of long command must be matched quetes or other ules  \
+  - 2nd part of long command
   - echo 'script 3'
 # script for install
 install:
