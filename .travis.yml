@@ -12,10 +12,12 @@ xcode_scheme: motiondetectTests
 #script: xctool -project motion-detect.xcworkspace \
 # -scheme motiondetectTests test
 
-# script before install
-before_install:
+
 # it seems for a long command, we can split it arbitrary?
 # but escape \ at command end and a dash at starting for new command is necessary
+
+# script before install
+before_install:
   - echo 'ready   go gogogo a long long sentence'
   - echo 'ready 2'
 # script for install
