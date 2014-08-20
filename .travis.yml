@@ -13,8 +13,8 @@ xcode_scheme: motiondetectTests
 # -scheme motiondetectTests test
 
 
-# it seems for a long command, we can split it arbitrary?
-# but escape \ at command end and a dash at starting for new command is necessary
+# for multiple command, give each a "- " at head of line
+# if the later is part of this command, append "\" at last
 
 # script before install
 before_install:
