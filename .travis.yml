@@ -30,6 +30,6 @@ after_script:
   echo 'after'
 
 # the target workspace
-xcode_wordspace: motion-detect.xcworkspace # path to your xcodeproj folder
+xcode_workspace: motion-detect.xcworkspace # path to your xcodeproj folder
 # the target test scheme
 xcode_scheme: motiondetectTests
