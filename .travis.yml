@@ -7,8 +7,25 @@ language: objective-c
 #script: xctool -project motion-detect.xcworkspace \
 # -scheme motiondetectTests test
 
+# script before install
+before_install:
+  echo 'ready go'
+# script for install
+install:
+  echo 'installing'
+
+# script after success
+after_success:
+  echo 'done'
+#script after fail
+after_failure:
+  echo 'fail'
+
+# script after done
+after_script:
+  echo 'after'
+
 # the target workspace
 xcode_wordspace: motion-detect.xcworkspace # path to your xcodeproj folder
 # the target test scheme
 xcode_scheme: motiondetectTests
-#xcode_scheme: MyNewProjectTests
