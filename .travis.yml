@@ -5,7 +5,7 @@ xcode_workspace: motion-detect.xcworkspace # path to your xcodeproj folder
 # the target test scheme
 #xcode_scheme: motiondetectTests
 xcode_scheme: 
-	-Pods-motiondetectTests
+#	-Pods-motiondetectTests
 	-motion-detect
 #before_install:
 #     - brew update
