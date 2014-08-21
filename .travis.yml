@@ -4,10 +4,11 @@ language: objective-c
 xcode_workspace: motion-detect.xcworkspace # path to your xcodeproj folder
 # the target test scheme
 #xcode_scheme: motiondetectTests
-xcode_scheme: motion-detectTestDemo
+xcode_scheme: 
+#motion-detectTestDemo
 #- motiondetectTests
 #- motion-detect
-#- Pods-motiondetectTests
+- Pods-motiondetectTests
 
 
 #before_install:
