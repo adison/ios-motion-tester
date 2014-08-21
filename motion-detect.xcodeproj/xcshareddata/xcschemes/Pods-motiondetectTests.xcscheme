@@ -17,7 +17,7 @@
                BlueprintIdentifier = "0A497F9192AE492F91F8B4BE"
                BuildableName = "libPods-motiondetectTests.a"
                BlueprintName = "Pods-motiondetectTests"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
