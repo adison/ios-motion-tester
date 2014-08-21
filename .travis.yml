@@ -4,12 +4,16 @@ language: objective-c
 xcode_workspace: motion-detect.xcworkspace # path to your xcodeproj folder
 # the target test scheme
 #xcode_scheme: motiondetectTests
-xcode_scheme: 
+
+#xcode_scheme: 
 #motion-detectTestDemo
 #- motiondetectTests
 #- motion-detect
-- Pods-motiondetectTests
+#- Pods-motiondetectTests
 
+script:
+  – xctool -workspace motion-detect.xcworkspace -scheme motiondetectTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  – xctool test -workspace motion-detect.xcworkspace -scheme motiondetectTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 #before_install:
 #     - brew update
