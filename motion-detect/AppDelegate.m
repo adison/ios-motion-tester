@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-@implementation AppDelegate
+@implementation AppDelegate 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"d2704d25a6a41c38627e64cc7354a4c5"];
