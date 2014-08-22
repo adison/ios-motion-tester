@@ -1,8 +1,8 @@
 CLANG_CXX_LANGUAGE_STANDARD = c++0x
 CLANG_CXX_LIBRARY = libc++
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$(SDKROOT)/Developer/Library/Frameworks"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/Cedar" "${PODS_ROOT}/Headers/Expecta" "${PODS_ROOT}/Headers/GHUnit" "${PODS_ROOT}/Headers/Kiwi" "${PODS_ROOT}/Headers/OCMock"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/Cedar" -isystem "${PODS_ROOT}/Headers/Expecta" -isystem "${PODS_ROOT}/Headers/GHUnit" -isystem "${PODS_ROOT}/Headers/Kiwi" -isystem "${PODS_ROOT}/Headers/OCMock"
-OTHER_LDFLAGS = -ObjC -lc++ -framework Foundation -framework QuartzCore -framework XCTest
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/HockeySDK/Vendor" $(inherited) "$(SDKROOT)/Developer/Library/Frameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 $(inherited) BITHOCKEY_VERSION="@\"3.5.6\"" BITHOCKEY_C_VERSION="\"3.5.6\"" BITHOCKEY_BUILD="@\"31\"" BITHOCKEY_C_BUILD="\"31\""
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/Cedar" "${PODS_ROOT}/Headers/Expecta" "${PODS_ROOT}/Headers/GHUnit" "${PODS_ROOT}/Headers/HockeySDK" "${PODS_ROOT}/Headers/Kiwi" "${PODS_ROOT}/Headers/OCMock"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/Cedar" -isystem "${PODS_ROOT}/Headers/Expecta" -isystem "${PODS_ROOT}/Headers/GHUnit" -isystem "${PODS_ROOT}/Headers/HockeySDK" -isystem "${PODS_ROOT}/Headers/Kiwi" -isystem "${PODS_ROOT}/Headers/OCMock"
+OTHER_LDFLAGS = -ObjC -lc++ -framework CoreGraphics -framework CoreText -framework CrashReporter -framework Foundation -framework QuartzCore -framework Security -framework SystemConfiguration -framework UIKit -framework XCTest
 PODS_ROOT = ${SRCROOT}/Pods
