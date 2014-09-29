@@ -1,5 +1,48 @@
 language: objective-c
-xcode_wordspace: motion-detect.xcworkspace
-#xcode_project: MyNewProject.xcodeproj # path to your xcodeproj folder
-xcode-scheme: motiondetectTests
-#xcode_scheme: MyNewProjectTests
+
+# the target workspace
+xcode_workspace: motion-detect.xcworkspace # path to your xcodeproj folder
+# the target test scheme
+#xcode_scheme: motiondetectTests
+
+#xcode_scheme: 
+#motion-detectTestDemo
+#- motiondetectTests
+#- motion-detect
+#- Pods-motiondetectTests
+
+script:
+  – xctool -workspace motion-detect.xcworkspace -scheme motiondetectTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  – xctool test -workspace motion-detect.xcworkspace -scheme motiondetectTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+
+#before_install:
+#     - brew update
+#     - brew install xctool
+
+#script: xctool -project motion-detect.xcworkspace \
+# -scheme motiondetectTests test
+
+
+# for multiple command, give each a "- " at head of line
+# if the later is part of this command, append "\" at last
+
+# script before install
+before_install:
+  - echo 'script1'
+  - echo each line segment of long command must be matched quetes or other ules 
+#  - 2nd part of long command
+  - echo 'script 3'
+# script for install
+install:
+  echo 'installing'
+
+# script after success
+after_success:
+  echo 'done'
+#script after fail
+after_failure:
+  echo 'fail'
+
+# script after done
+after_script:
+  echo 'after'

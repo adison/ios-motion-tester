@@ -2,8 +2,8 @@
 //  ViewController.h
 //  motion-detect
 //
-//  Created by senao.mis on 2014/8/19.
-//  Copyright (c) 2014年 senao.mis. All rights reserved.
+//  Created by adison.wu on 2014/8/19.
+//  Copyright (c) 2014年 adison.wu. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -26,4 +26,5 @@
 // 動態
 @property (nonatomic) IBOutlet UILabel *lblMotion;
 
+-(IBAction)toggleFlash:(id)sender;
 @end

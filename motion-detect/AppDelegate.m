@@ -2,17 +2,19 @@
 //  AppDelegate.m
 //  motion-detect
 //
-//  Created by senao.mis on 2014/8/19.
-//  Copyright (c) 2014年 senao.mis. All rights reserved.
+//  Created by adison.wu on 2014/8/19.
+//  Copyright (c) 2014年 adison.wu. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
-@implementation AppDelegate
+@implementation AppDelegate  1234567890
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"d2704d25a6a41c38627e64cc7354a4c5"];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
+    [[BITHockeyManager sharedHockeyManager] testIdentifier];
     return YES;
 }
 							

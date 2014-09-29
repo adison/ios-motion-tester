@@ -25,6 +25,8 @@
 		CC975E4419A2F96E005EAB26 /* MotionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = CC975E4319A2F96E005EAB26 /* MotionDetector.m */; };
 		CC975E4919A301F9005EAB26 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC975E4819A301F9005EAB26 /* CoreMotion.framework */; };
 		CC975E4E19A307F2005EAB26 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC975E4D19A307F2005EAB26 /* MapKit.framework */; };
+		CC975E6619A42FC9005EAB26 /* KiwiMotionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = CC975E6519A42FC9005EAB26 /* KiwiMotionDetector.m */; };
+		CC975E6E19A466A8005EAB26 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC975E6D19A466A8005EAB26 /* AVFoundation.framework */; };
 		D12246145174453782B514F3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A6F694466A49E7BBDE0B5E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +59,7 @@
 		CC975E2219A2ED4F005EAB26 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CC975E2319A2ED4F005EAB26 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CC975E2519A2ED4F005EAB26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CC975E2B19A2ED4F005EAB26 /* motion-detectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "motion-detectTests.xctest"; path = motiondetectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC975E2B19A2ED4F005EAB26 /* motiondetectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = motiondetectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC975E2C19A2ED4F005EAB26 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CC975E3419A2ED4F005EAB26 /* motion-detectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "motion-detectTests-Info.plist"; sourceTree = "<group>"; };
 		CC975E3619A2ED4F005EAB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -68,6 +70,8 @@
 		CC975E4819A301F9005EAB26 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		CC975E4A19A3061B005EAB26 /* commonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commonMacro.h; sourceTree = "<group>"; };
 		CC975E4D19A307F2005EAB26 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CC975E6519A42FC9005EAB26 /* KiwiMotionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KiwiMotionDetector.m; sourceTree = "<group>"; };
+		CC975E6D19A466A8005EAB26 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC975E6E19A466A8005EAB26 /* AVFoundation.framework in Frameworks */,
 				CC975E4919A301F9005EAB26 /* CoreMotion.framework in Frameworks */,
 				CC975E1019A2ED4F005EAB26 /* CoreGraphics.framework in Frameworks */,
 				CC975E1219A2ED4F005EAB26 /* UIKit.framework in Frameworks */,
@@ -114,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				CC975E0A19A2ED4F005EAB26 /* motion-detect.app */,
-				CC975E2B19A2ED4F005EAB26 /* motion-detectTests.xctest */,
+				CC975E2B19A2ED4F005EAB26 /* motiondetectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 		CC975E0C19A2ED4F005EAB26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC975E6D19A466A8005EAB26 /* AVFoundation.framework */,
 				CC975E4D19A307F2005EAB26 /* MapKit.framework */,
 				CC975E4819A301F9005EAB26 /* CoreMotion.framework */,
 				CC975E0D19A2ED4F005EAB26 /* Foundation.framework */,
@@ -167,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				CC975E3819A2ED4F005EAB26 /* motion_detectTests.m */,
+				CC975E6519A42FC9005EAB26 /* KiwiMotionDetector.m */,
 				CC975E3319A2ED4F005EAB26 /* Supporting Files */,
 			);
 			path = "motion-detectTests";
@@ -193,6 +200,7 @@
 				CC975E0719A2ED4F005EAB26 /* Frameworks */,
 				CC975E0819A2ED4F005EAB26 /* Resources */,
 				9053D093F60A48528B44BD9D /* Copy Pods Resources */,
+				CCA11EA919A5F87F00F3A2B5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -220,7 +228,7 @@
 			);
 			name = motiondetectTests;
 			productName = "motion-detectTests";
-			productReference = CC975E2B19A2ED4F005EAB26 /* motion-detectTests.xctest */;
+			productReference = CC975E2B19A2ED4F005EAB26 /* motiondetectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -230,9 +238,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = senao.mis;
+				ORGANIZATIONNAME = adison.wu;
 				TargetAttributes = {
 					CC975E0919A2ED4F005EAB26 = {
+						DevelopmentTeam = DX545MP384;
 						SystemCapabilities = {
 							com.apple.iOS = {
 								enabled = 1;
@@ -330,6 +339,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CCA11EA919A5F87F00F3A2B5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
 		D1649DC772A94256A39608BC /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC975E3919A2ED4F005EAB26 /* motion_detectTests.m in Sources */,
+				CC975E6619A42FC9005EAB26 /* KiwiMotionDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +444,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -481,10 +505,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "motion-detect/motion-detect-Prefix.pch";
 				INFOPLIST_FILE = "motion-detect/motion-detect-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -495,10 +522,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "motion-detect/motion-detect-Prefix.pch";
 				INFOPLIST_FILE = "motion-detect/motion-detect-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
